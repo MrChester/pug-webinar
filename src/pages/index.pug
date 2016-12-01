@@ -1,0 +1,11 @@
+extends ../layout
+
+block title
+    title Главная Страница (index.pug)
+
+block content
+    ul
+        each item in one
+            li
+                - console.log(item[0]['one'])
+
