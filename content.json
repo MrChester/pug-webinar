@@ -1,12 +1,7 @@
 {
-	"items" : {
-		"Главная" : "/index.html",
-		"О компании" : "/about.html",
-		"Контакты" : "/contacts.html",
-		"Тестовая страница" : "/test.html"
-	},
-
-	"one" : {
-		"key" : [{"one": "two"}]
+	"item" : "Певый файл",
+	"pages" : {
+		"first" : "first-page",
+		"second" : "second-page"
 	}
 }
