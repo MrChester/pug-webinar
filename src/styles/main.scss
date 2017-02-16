@@ -1,0 +1,12 @@
+//colors
+$white: #efeee9;
+$beige: #eeebdf;
+$green: #10c1a8;
+
+@import "helpers/mixins";
+
+@import "layout/setups";
+@import "layout/fonts";
+
+
+@import "blocks/**/*.scss";

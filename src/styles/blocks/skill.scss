@@ -1,0 +1,15 @@
+.skill__circle {
+	width: 100px;
+	height: 100px;
+	display: block;
+	fill: transparent;
+	stroke-width: 15;
+}
+
+.skills__circle-under {
+	stroke: #dfdcd5;
+}
+
+.skills__circle-above {
+	stroke: $green;
+}

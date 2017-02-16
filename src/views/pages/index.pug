@@ -1,0 +1,66 @@
+extends ../main-layout
+
+block title
+    | Главная Страница
+
+block content
+    .wrapper
+        section.section.hero
+            .hero__bg
+                img(src="img/bg/portfolio.jpg" alt="").hero__bg-img
+
+            .hero__container
+                img(src="img/decor/portfolio-header.png" alt="").hero-title-pic
+
+                .user
+                    .user__pic-container
+                        img(src="img/content/user.jpg" alt="").user__pic
+                    .user__name Владимир Астахов
+                    .user__desc Личный сайт разработчика
+
+            ul.socials
+
+                -
+                    icons = [
+                         {
+                            icon: 'github',
+                            href: '//github.com'
+                        },
+                    ]
+
+                each icon in icons
+                    li.socials__item
+                        - console.log(icon)
+                        a(href=icon.href).socials__link
+                            svg.socials__icon
+                                use(xlink:href=`img/sprite/sprite.svg#${icon.icon}`)
+        section.section.about
+            .about__col.about__col_left
+                svg(viewbox="0 0 1000 110" preserveAspectRatio="none").about__triangle
+                    polygon(points="0,0 0,110 1000, 110")
+                .section-title(style="background-image: url('img/decor/about_header.png')")
+                    | Обо мне
+                .about
+                    .about__pic
+                    .block-title
+                    .block-text
+
+            .about__col.about__col_right
+                svg(viewbox="0 0 1000 110" preserveAspectRatio="none").about__triangle
+                    polygon(points="0,110 1000,110 1000,0")
+                .skills
+                    .block-title
+                    .skills__text
+                        p
+                        p
+                        p
+                    ul.skills-group
+                        li.skills-group__item
+                            .skills-group__title Frontend
+                            ul.skills-list
+                                li.skills-list__item
+                                    .skill
+                                        svg.skill__circle
+                                            circle(cx="50" cy="50" r="40").skills__circle-under
+                                            circle(cx="50" cy="50" r="40").skills__circle-above
+        section.section.map
